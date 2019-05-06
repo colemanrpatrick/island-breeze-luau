@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <head>
+      <meta charset="utf-8">
+      <title>island breeze luau</title>
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:300,400" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+    </head>
+  </head>
+  <body onresize="checkSlideSize('slider','.slide',5);">
+    <!--========== masthead ==========-->
+    <div class="masthead">
+      <section>
+        <button type="button" class="menu-btn" name="button" id="menu-btn" onclick="idToggle('main-nav','active');toggleThis(this,'active')">
+          <hr class="menu-btn-hr-1"/>
+          <hr class="menu-btn-hr-2"/>
+          <hr class="menu-btn-hr-3"/>
+        </button>
+        <!-- <button type="button" name="button" id="accessibilityBtn">A</button> -->
+        <nav class="phone">
+          <ul>
+            <li><a href="#" onclick="tel:+1-866-482-9775"><span>toll free</span> 1 866 482 9775</a></li>
+            <li><a href="#" onclick="tel:808-892-2082"><span>local</span> 808 892 2082</a></li>
+          </ul>
+        </nav>
+        <a href="#" id="logo">
+          <img src="images/island-breeze-luau-logo.png" alt="">
+        </a>
+        <nav id="main-nav" class="main-nav">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Location</a>
+          <a href="#">Royal Court</a>
+          <a href="#">Reservations</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Luau Photos</a>
+          <a href="#">Cart</a>
+        </nav>
+      </section>
+    </div>
+    <!--========== banner ==========-->
+    <div class="banner">
+      <section>
+        <a href="#" id="reserve-btn">reservations</a>
+        <h2 class="blurb">
+          <span class="span-1">hawaii today's</span><hr>
+          <span class="span-2">best</span><hr>
+          <span class="span-3">of <span><span class="span-2">west</span><hr>
+          <span class="span-2">hawaii</span><hr>
+          <span class="span-4">since 2000</span>
+        </h2>
+      </section>
+      <div class="slideshow" id="slide-show">
+        <div class="slider" id="slider">
+          <div class="slide" id="slide1"></div>
+          <div class="slide" id="slide2"></div>
+          <div class="slide" id="slide3"></div>
+          <div class="slide" id="slide4"></div>
+          <div class="slide" id="slide5"></div>
+        </div>
+      </div>
+      <button type="button" name="button" class="slide-prev" onclick="slideToggle('slider',false,5)"><i class="material-icons">chevron_left</i></button>
+      <button type="button" name="button" class="slide-next" onclick="slideToggle('slider',true,5)"><i class="material-icons">chevron_right</i></button>
+      <!-- <section>
+        <header>
+           <span>experiences something something</span>
+           <a href="#">reservations</a>
+        </header>
+      </section> -->
+    </div>
+    <!--========== splash-section ==========-->
+    <div class="welcome-section">
+      <section>
+        <article>
+          <img src="images/palm_tree.png" alt="">
+          <span>welcome to</span>
+          <h1>island breeze luau</h1>
+          <h2>west hawaii's best new luau</h2>
+        </article>
+      </section>
+    </div>
+    <!--========== vendor-section ==========-->
+    <div class="vendor-section">
+      <section>
+        <div class="product-wrapper">
+          <div class="product" id="product-1">
+            <header>island breeze luau</header>
+            <ul>
+              <li><a href="#">reservations</a></li>
+              <li><button type="button" name="button" onclick="idToggle('dtl-1','active')">learn more</button></li>
+            </ul>
+            <img src="images/island-breeze-vendor.jpg" alt="">
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product" id="product-2">
+            <header>hano hano<span>ad on</span></header>
+            <ul>
+              <li><a href="#">reservations</a></li>
+              <li><button type="button" name="button" onclick="idToggle('dtl-2','active')">learn more</button></li>
+            </ul>
+            <img src="images/hano-hano.jpg" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="product-detail-wrapper" id="dtl-1">
+      <div class="product-detail">
+        <header> <h3>"He 'Ohana Kakou" (We are ‘Ohana)</h3> <button type="button" name="button" onclick="idToggle('dtl-1','active')"></button> </header>
+        <article>
+          <p>The evening begins with a warm welcome and an opportunity to meet the performers, while learning traditional arts & crafts. Watch the "Kalua'ana o ka Pua'a", the uncovering of the imu (underground oven). </p>
+          <p>Hawai'i's only lū’au featuring the arrival of the Royal Court aboard an outrigger canoem, and a lavish Hawaiian buffet with local favorites including kalua pork, fresh fish, grilled beef and fresh island produce all combined with an open bar.</p>
+          <p>check in at <b>5:45pm</b></p>
+          <ul>
+            <li>adults(13 +)<span>$104.83</span></li>
+            <li>per child(5-12) <span>$53.56</span> </li>
+          </ul>
+          <a href="#">book now</a>
+        </article>
+      </div>
+    </div>
+    <div class="product-detail-wrapper" id="dtl-2">
+      <div class="product-detail">
+        <header> <h3>hano hano ad on</h3> <button type="button" name="button" onclick="idToggle('dtl-2','active')"></button> </header>
+        <article>
+          <p>upgrade your experience and get <b>first seating</b> in front of the stage, and <b>first in line</b> at the buffet</p>
+          <p></p>
+          <p>check in at <b>5:30pm</b></p>
+          <ul>
+
+            <li>for an extra<span>$13.50</span> + tax paid at the door</li>
+          </ul>
+          <a href="#">book now</a>
+        </article>
+      </div>
+    </div>
+    <!--========== article-sectoin ==========-->
+    <div class="article-section">
+      <section>
+        <div class="article-blurb">
+          <header><img src="images/palm_tree_white.png" alt="">"He 'Ohana Kakou"</br><span>(We are ‘Ohana)</span></header>
+          <span>see island breeze luau come to life in the following video</span>
+        </div>
+        <aside>
+          <div id="youtube" class="youtube">
+            <div class="thumbnail"></div>
+            <img src="images/yt_icon_rgb.png" class="youtube-icon"/>
+          </div>
+        </aside>
+        <div class="article-cont">
+          <article>
+            <p><b>“He ‘Ohana Kakou“is Island Breeze’s newest production.</b> There is nothing more important in Hawai'i than 'ohana (family). The word 'ohana literally means "the offshoots" referring to the new shoots on our precious staple, the kalo (taro) plant - we are offshoots, forever connected to each other by our common root. Stories and cultural practices were passed down within the family so that today we can honor our 'ohana and share its beauty with others. We invite you to join us as we celebrate 'ohana. Meet our Polynesian cousins from Samoa, Tahiti & New Zealand. Hear our stories through song & dance as we present the splendor and beauty of this land we call paradise.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+    <div class="second-article-section">
+      <section>
+      <div class="img-cont">
+        <img src="images/island-breeze-courtyard-mariot-kona.jpg" alt="">
+      </div>
+      <article>
+        <header>
+          location
+        </header>
+        <p>The Island Breeze Lū’au is held under the stars, on the historic grounds of the Courtyard Marriott King Kamehameha's Kona Beach Hotel. The hotel is located adjacent to the pier in Kailua Bay, on Palani Road in Kailua-Kona.  It is within walking distance of many restaurants, shops and historical sites such as Hulihe’e Palace and Moku’aikauwa Church in Kailua-Kona. The lū’au is easily accessible from the Kohala Coast Resort area to the north and the Sheraton Kona Resort & Spa at Keauhou Bay to the south.</p>
+      </article>
+      </section>
+      <section>
+      <article>
+        <header>
+          Check-in Desk & Parking
+        </header>
+        <p>The Island Breeze Lū'au reservation desk is located in the lobby of the Courtyard Marriott King Kamehameha's Kona Beach Hotel. Vouchers must be turned in for lū'au tickets at the lū'au desk. Guests must have tickets to be admitted to the lū'au. Ample parking is available at the Courtyard Marriott King Kamehameha's Kona Beach Hotel. Validation is given at the lū'au desk and during the lū'au.</p>
+      </article>
+      <div class="img-cont">
+        <img src="images/hotel-kona-beach-oceanfront.jpg" alt="">
+      </div>
+      </section>
+      <section>
+        <div id="map">
+        <!-- <iframe src="" width="" height=""></iframe> -->
+        </div>
+      </section>
+    </div>
+    <footer>
+      <ul>
+        <li><img class="logo" src="images/islandBreezeLogo.png">
+            <p>75-5660 Palani Rd,<br>Kailua,HI 96750</p>
+            <hr>
+            <p>Tuesdays, Thurdays, Sundays and Select Wednesdays</br>
+              Check in at <b>5PM</b>. festivities end <b>8:30PM</b>
+            </p>
+        </li>
+        <li>
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">Location</a>
+          <a href="#">Royal Court</a>
+          <a href="#">Reservations</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+          <a href="#">Luau Photos</a>
+          <a href="#">Cart</a>
+        </li>
+        <li>
+          <span>follow us</span>
+            <div class="social">
+              <a class="facebook-social" href="https://www.facebook.com/HawaiiDiscount"></a>
+              <a class="twitter-social" href="https://twitter.com/hawaiidiscount"></a>
+              <a class="youtube-social" href="https://www.youtube.com/hawaiidiscount"></a>
+              <a class="pinterest-social" href="https://www.pinterest.com/hawaiidiscount/"></a>
+            </div>
+        </li>
+      </ul>
+    </footer>
+    <!--========== map section ==========-->
+  </body>
+  <script type="text/javascript" src="toggle.js"></script>
+  <script type="text/javascript" src="fontResize.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</html>
