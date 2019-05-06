@@ -968,7 +968,6 @@ body{
 	}
 }
 /*=== product detail ===*/
-/* product- detail */
 .product-detail-wrapper{
   position: fixed;
   width: 100%;
@@ -986,7 +985,7 @@ body{
 }
 .product-detail {
   position: fixed;
-  width: 850px;
+	width: 700px;
   background-color: white;
   box-shadow: 0px 5px 15px -5px black;
   left: 50%;
@@ -1002,12 +1001,12 @@ body{
   display: block;
   color: white;
   position: relative;
-  padding: 2em 1em;
+  padding: 1em 1em;
 }
 .product-detail header h3 {
   font-size: 30px;
 	font-family: "Kaushan script";
-  line-height: 0.75;
+  line-height:1.25em;
 }
 .product-detail header button{
   position: absolute;
@@ -1063,6 +1062,41 @@ body{
   display: inline-block;
   text-transform: capitalize;
   font-family: "kaushan script";
+}
+@media(max-width:800px){
+	.product-detail{
+		width: 90%;
+	}
+	.product-detail header h3 {
+    font-size: 25px;
+	}
+	.product-detail header h3 {
+    font-size: 18px;
+	}
+	.product-detail ul li {
+    font-size: 16px;
+	}
+	.product-detail p {
+    padding-left: 0em;
+    padding-right: 0em;
+	}
+	.product-detail ul li span {
+    font-size: 25px;
+	}
+}
+@media(max-width:600px){
+	.product-detail header {
+    padding: 1em 1em;
+	}
+	.product-detail header h3 {
+		line-height:1.25em;
+	}
+	.product-detail a {
+    font-size: 18px;
+	}
+	.product-detail ul li span {
+    font-size: 18px;
+	}
 }
 /* article-section */
 /*====*/
