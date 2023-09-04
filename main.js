@@ -1,11 +1,11 @@
 var timer = function Timer(){
   slideToggle('slider',true,5);
+  checkSlideSize('slider','.slide',5);
 }
 var beginTimer = setInterval(timer,3000);
 function endTimer(){
   clearInterval(beginTimer);
 }
-
 
 (function() {
   console.log("checksize");

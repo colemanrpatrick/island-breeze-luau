@@ -1,0 +1,368 @@
+*, *:before, *:after {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box !important;
+	-moz-box-sizing: border-box !important;
+	-ms-box-sizing: border-box !important;
+	box-sizing: border-box !important;
+}
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+*:not(.fa){
+	font-family: "Montserrat",sans-serif;
+}
+a{
+	text-decoration: none !important;
+}
+b{
+	font-weight: bold !important;
+}
+body{
+  position: relative;
+	padding: 0;
+  margin: 0;
+}
+.checkpoint-first,
+.checkpoint{
+	width: 100%;
+	height: auto;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+/*======================*/
+.masthead{
+	position: relative;
+	width: 100%;
+	background-color:#54762a;
+	height: 5em;
+	font-size: 18px;
+}
+.masthead section{
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	height: 5em;
+}
+.phone{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.phone ul li{
+	display: inline-block;
+	vertical-align: middle;
+}
+.phone ul li a{
+	color: white;
+	font-size: 1.75em;
+	transition: 0.3s;
+}
+.phone ul li a:hover{
+	color: gold;
+}
+.phone ul li a span{
+	font-family:'Kaushan Script';
+	font-size: 0.7em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	text-transform: capitalize;
+}
+@media(max-width:1250px){
+	.masthead section{
+		width: 90%;
+	}
+}
+.menu-btn{
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 30px;
+  transition: 0.3s;
+  background: transparent;
+	border: 0;
+	cursor: pointer;
+}
+.menu-btn:hover{
+	transform:translateY(-50%) scale(1.2);
+}
+.menu-btn hr {
+	display: block;
+  width: 100%;
+  height: 3px;
+  border: 2px solid white;
+  transition: 0.3s;
+  position: absolute;
+}
+.menu-btn-hr-1{
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+}
+.menu-btn-hr-2{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.menu-btn-hr-3{
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+}
+.menu-btn.active .menu-btn-hr-1{
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+}
+.menu-btn.active .menu-btn-hr-2{
+  opacity: 0;
+}
+.menu-btn.active .menu-btn-hr-3{
+  top: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+}
+#logo{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	top: 4em;
+	z-index: 999;
+}
+#logo img {
+  width: 18em;
+  margin-left: 1em;
+  transition: 0.3s;
+}
+#logo img:hover{
+	transform: scale(1.1);
+}
+#main-nav {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 999;
+  width: 18em;
+}
+.main-nav{
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: 0.3s;
+}
+.main-nav.active{
+	transform: scaleY(1);
+}
+#main-nav a {
+  display: block;
+  background-color: gold;
+  padding: 1em;
+	font-size: 1em;
+}
+@media(max-width:800px){
+	.masthead{
+		font-size: 16px;
+	}
+}
+@media(max-width:700px){
+	.masthead{
+		font-size: 14px;
+	}
+}
+@media(max-width:650px){
+	#main-nav a {
+		background-color: gold;
+		padding: 0.5em;
+		font-size: 1.4em;
+	}
+	.phone {
+		position: relative;
+		left: auto;
+		top: auto;
+		transform: translateY(0%);
+		width: 90%;
+	}
+	.phone ul {
+		width: 100%;
+		display: table;
+	}
+	.phone ul li {
+		display: table-cell;
+		width: 50%;
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 0.5em;
+	}
+	.masthead{
+		font-size: 13px;
+	}
+	.phone ul li a span {
+    display: block;
+	}
+}
+@media(max-width:600px){
+	.masthead{
+		font-size: 12px;
+	}
+	#logo img {
+    width: 18em;
+    margin-left: -1em;
+	}
+}
+@media(max-width:500px){
+	.masthead {
+    font-size: 11px;
+	}
+	.masthead section{
+		width: 100%;
+	}
+	#logo img {
+    width: 16em;
+    margin-left: 0.25em;
+	}
+}
+@media(max-width:400px){
+	.masthead {
+    font-size: 10px;
+	}
+	.menu-btn {
+    width: 30px;
+    height: 25px;
+	}
+}
+@media(max-width:350px){
+	#logo img {
+    width: 14em;
+	}
+	.phone {
+    width: 85%;
+	}
+}
+/*===============================*/
+.third-container,
+.mid-container,
+.top-container{
+	width: 100%;
+	position: relative;
+}
+/*============footer=============*/
+footer{
+	width: 100%;
+	background-size: 10%;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+	background-image: url("images/tapasGreen.png");
+	width: 100%;
+}
+footer ul{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #45752e;
+	text-align: center;
+	padding: 3em;
+}
+footer .logo{
+	width:50%;
+	margin: 0 auto;
+}
+footer hr {
+  height: 0 !important;
+  border: 0 !important;
+}
+@media(max-width:1250px){
+	footer ul{
+		width: 90%;
+	}
+}
+footer ul li{
+	width: 33.3%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: top;
+}
+footer ul li span{
+	font-family: "Kaushan Script";
+	color: white !important;
+}
+footer p {
+ width:100%;
+ text-align:center;
+ color:white !important;
+ text-transform:capitalize;
+ padding:.5em
+}
+footer a{
+	display: block;
+	font-size: 16px;
+	color: white !important;
+}
+.social {
+ width:100%;
+ text-align:center
+}
+.social a {
+ display:inline-block;
+ vertical-align:middle;
+ width:37px;
+ height:35px;
+ background-size:cover;
+ margin:.5em;
+ background-image:url('images/facebook_twitter_pinterest_youtube.png');
+}
+.facebook-social {
+ background-position:0 0
+}
+.twitter-social {
+ background-position:115px 0
+}
+.youtube-social {
+ background-position:76px 0
+}
+.pinterest-social {
+ background-position:37px 0
+}
+footer section ul li a {
+ font-size:16px;
+ text-transform:uppercase;
+ font-weight:300;
+ color:#fff!important
+}
+@media(max-width:900px){
+	footer ul {
+    padding-top: 2em;
+		padding-bottom: 2em;
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	footer ul li {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 1em;
+	}
+	footer .logo {
+    width: 200px;
+	}
+}
+@media(max-width:700px){
+	footer .logo {
+		width: 150px;
+	}
+}
+@media(max-width:500px){
+	footer ul {
+    padding-top: 0em;
+    padding-bottom: 0em;
+	}
+	footer .logo {
+    width: 120px;
+	}
+}

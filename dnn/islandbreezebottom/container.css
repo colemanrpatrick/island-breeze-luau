@@ -1,0 +1,457 @@
+.head1 {
+	color:#832b07;
+	font-size:26px;
+	text-transform:uppercase;
+}
+.head2 {
+	color:#ffffff;
+	font-size:19px;
+	font-weight:normal;
+	padding-bottom:8px;
+	display:block;
+}
+.buttons{
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+}
+/*========== bottom container ===========*/
+.article-section{
+	width: 100%;
+	background-size: 10%;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+	background-image: url("images/tapasGreen.jpg");
+}
+.article-section section {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #45752e;
+  text-align: center;
+	padding: 3em;
+}
+@media(max-width:1250px){
+	.article-section section{
+		width: 90%;
+	}
+}
+.article-section aside{
+	display: inline-block;
+	width: 50%;
+	padding-right: 3em;
+	vertical-align: middle;
+}
+.article-blurb {
+  display: inline-block;
+  width: 50%;
+  margin-left: -5px;
+  vertical-align: middle;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+.article-blurb header {
+  font-size: 35px;
+  color: white;
+  font-family: "kaushan script";
+  line-height: 1em;
+  padding-bottom: 1em;
+}
+.article-blurb header span{
+	font-size: 25px;
+	font-family: "kaushan script";
+}
+.article-blurb span{
+	padding-top: 1em;
+	font-size: 18px;
+	color: white;
+	text-transform: capitalize;
+}
+.youtube {
+  position: relative;
+  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+	margin-left: auto !important;
+  margin-right: auto !important;
+}
+.thumbnail {
+  height: 280px;
+  box-shadow: 0px 5px 15px -5px black;
+  background-image: url("images/thumbnail0.jpg");
+	background-size: cover;
+	background-position: bottom right;
+}
+.youtube iframe {
+	width: 100%;
+  height: 280px;
+  position: relative;
+}
+.youtube-icon{
+  position: absolute;
+  z-index: 996;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 60px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.article-cont{
+	width: 100%;
+}
+.article-cont article{
+	padding: 3em;
+}
+.article-cont p {
+	color: white;
+	line-height: 2em;
+	font-size: 16px;
+}
+.article-cont span {
+  font-size: 24px;
+  line-height: 1.25em;
+  display: block;
+	color: darkred;
+}
+@media(max-width:1200px){
+	.article-section aside {
+	  padding-right: 0em;
+	}
+	.article-blurb header img {
+    width: 100px;
+	}
+	.article-blurb {
+    padding-left: 0em;
+    padding-right: 0em;
+	}
+}
+@media(max-width:1000px){
+	.article-cont article {
+    padding: 0em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+	}
+	.article-section section {
+    padding: 2em;
+	}
+	.thumbnail {
+	  height: 240px;
+	}
+	.article-blurb header {
+    font-size: 30px;
+	}
+	.article-blurb header span {
+    font-size: 20px;
+	}
+	.article-blurb span {
+    font-size: 16px;
+	}
+	.article-cont article {
+    padding: 2em;
+	}
+}
+@media(max-width:900px){
+	.article-section section {
+	  padding: 1em;
+	}
+	.thumbnail {
+    height: 220px;
+	}
+	.article-blurb header img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+	}
+	.article-blurb header {
+    padding-bottom: 0;
+	}
+	.article-blurb {
+    display: block;
+    width: 100%;
+    padding: 1em;
+	}
+	.youtube{
+		width: 350px;
+		height: 200px;
+	}
+	.article-section aside {
+    display: block;
+    width: 100%;
+	}
+	.youtube iframe,
+	.thumbnail {
+		width: 100%;
+		height: 100%;
+	}
+}
+@media(max-width:500px){
+	.article-blurb header img {
+    width: 60px;
+	}
+	.article-cont article {
+	  padding: 1em;
+	}
+	.article-blurb header {
+    font-size: 25px;
+	}
+	.article-blurb header span {
+    font-size: 16px;
+	}
+	.article-blurb {
+    padding: 0.5em;
+	}
+	.article-blurb span {
+    font-size: 14px;
+	}
+	.youtube {
+    width: 250px;
+    height: 150px;
+	}
+}
+@media(max-width:400px){
+	.article-cont article {
+    padding-top: 1em;
+    padding-left: 0;
+    padding-right: 0;
+	}
+}
+/*===== detail-view =====*/
+.article-cont{
+	width: 100%;
+}
+.article-cont article{
+	padding: 3em;
+}
+.article-cont p {
+	color: white;
+	line-height: 2em;
+}
+.article-cont span {
+  font-size: 24px;
+  line-height: 1.25em;
+  display: block;
+	color: darkred;
+}
+@media(max-width:1200px){
+	.article-section aside {
+	  padding-right: 0em;
+	}
+	.article-blurb header img {
+    width: 100px;
+	}
+	.article-blurb {
+    padding-left: 0em;
+    padding-right: 0em;
+	}
+}
+@media(max-width:1000px){
+	.article-cont article {
+    padding: 0em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+	}
+	.article-section section {
+    padding: 2em;
+	}
+	.thumbnail {
+	  height: 240px;
+	}
+	.article-blurb header {
+    font-size: 30px;
+	}
+	.article-blurb header span {
+    font-size: 20px;
+	}
+	.article-blurb span {
+    font-size: 16px;
+	}
+	.article-cont article {
+    padding: 2em;
+	}
+}
+@media(max-width:900px){
+	.article-section section {
+	  padding: 1em;
+	}
+	.thumbnail {
+    height: 220px;
+	}
+	.article-blurb header img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+	}
+	.article-blurb header {
+    padding-bottom: 0;
+	}
+	.article-blurb {
+    display: block;
+    width: 100%;
+    padding: 1em;
+	}
+	.youtube{
+		width: 350px;
+		height: 200px;
+	}
+	.article-section aside {
+    display: block;
+    width: 100%;
+	}
+	.youtube iframe,
+	.thumbnail {
+		width: 100%;
+		height: 100%;
+	}
+}
+@media(max-width:500px){
+	.article-blurb header img {
+    width: 60px;
+	}
+	.article-cont article {
+	  padding: 1em;
+	}
+	.article-blurb header {
+    font-size: 25px;
+	}
+	.article-blurb header span {
+    font-size: 16px;
+	}
+	.article-blurb {
+    padding: 0.5em;
+	}
+	.article-blurb span {
+    font-size: 14px;
+	}
+	.youtube {
+    width: 250px;
+    height: 150px;
+	}
+}
+@media(max-width:400px){
+	.article-cont article {
+    padding-top: 1em;
+    padding-left: 0;
+    padding-right: 0;
+	}
+}
+/*===== detail-view =====*/
+.second-article-section{
+	background-image: url("images/tapasWhite.png");
+	background-size: 10%;
+	background-position: center;
+	position: relative;
+}
+.second-article-section section {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  text-align: center;
+	padding: 3em;
+}
+.second-article-section .img-cont {
+  display: inline-block;
+  width: 45%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+	vertical-align: middle;
+}
+.second-article-section .img-cont img {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.second-article-section article{
+	display: inline-block;
+	margin-left: -5px;
+	width: 55%;
+	vertical-align: middle;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	padding-bottom: 2em;
+	text-align: center;
+}
+.second-article-section header {
+  font-size: 35px;
+  text-transform: capitalize;
+  font-family: "Kaushan script";
+  color: green;
+	padding: 1em;
+}
+.second-article-section article p {
+	color: dimgrey;
+	line-height: 2em;
+	font-size: 16px;
+}
+#map{
+	width: 100%;
+	height: 300px;
+	background-image: url("images/map.jpg");
+}
+@media(max-width:1250px){
+	.second-article-section section{
+		width: 90%;
+	}
+}
+@media(max-width:1000px){
+	.second-article-section section {
+    padding-left: 1em;
+    padding-right: 1em;
+	}
+}
+@media(max-width:900px){
+	.second-article-section header {
+    padding: 0.5em;
+		line-height: 1em;
+	}
+}
+@media(max-width:750px){
+	.second-article-section section {
+    padding-top: 1em;
+	}
+	.second-article-section .img-cont {
+    display: block;
+    width: 100%;
+    height: 250px;
+	}
+	.second-article-section article {
+		display: block;
+		width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+	}
+	.second-article-section section:nth-child(2){
+		transform: scaleY(-1);
+	}
+	.second-article-section section:nth-child(2) article{
+		transform: scaleY(-1);
+	}
+	.second-article-section section:nth-child(2) .img-cont{
+		transform: scaleY(-1);
+	}
+}
+@media(max-width:600px){
+	.second-article-section .img-cont {
+    height: 150px;
+	}
+	.second-article-section article {
+    padding-left: 0em;
+    padding-right: 0em;
+	}
+	.second-article-section header {
+    font-size: 30px;
+	}
+}
+@media(max-width:400px){
+	.second-article-section header {
+    font-size: 20px;
+	}
+}

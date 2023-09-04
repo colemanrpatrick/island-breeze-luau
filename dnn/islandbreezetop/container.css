@@ -1,0 +1,428 @@
+.head1 {
+	color:#832b07;
+	font-size:26px;
+	text-transform:uppercase;
+}
+.head2 {
+	color:#ffffff;
+	font-size:19px;
+	font-weight:normal;
+	padding-bottom:8px;
+	display:block;
+}
+.buttons{
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	z-index: 999;
+	width: 100%;
+	height: auto;
+}
+/*==============================*/
+/*======================*/
+.banner{
+	font-size: 18px;
+	width: 100%;
+	background-size: 10%;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+	background-image: url("images/tapasGreen.jpg");
+}
+.slideshow {
+  width: 1200px;
+  margin: 0 auto;
+  background-size: cover;
+  position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	background-position: left;
+}
+.slider{
+	transition: 0.5s;
+	font-size: 0;
+}
+.banner section{
+	position: absolute;
+	height: 500px;
+	width: 1200px;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	z-index: 3;
+}
+#reserve-btn{
+	position: absolute;
+	left: 1em;
+	bottom: 1em;
+	font-size: 2em;
+	padding: 0.5em 1em;
+	background-color: gold;
+	display: inline-block;
+	font-family: "Kaushan Script";
+	color: darkgreen;
+	transition: 0.3s;
+	text-transform: capitalize;
+}
+#reserve-btn:hover{
+	color: green;
+	background-color: yellow;
+}
+/*---- blurb ----*/
+.blurb{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0.5em;
+	text-align: center;
+	color: white;
+	text-shadow: 0px 0px 5px black;
+}
+.blurb hr {
+	border: 0;
+}
+.blurb .span-1{
+	text-transform: capitalize;
+	font-size: 25px;
+	line-height: 2em;
+}
+.blurb .span-2{
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 0.75em;
+}
+.blurb .span-3{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.blurb .span-4{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+@media(max-width:800px){
+	.blurb .span-1 {
+    font-size: 18px;
+	}
+	.blurb .span-2 {
+    font-size: 25px;
+	}
+	.blurb .span-3 {
+    font-size: 18px;
+		line-height: 1em;
+	}
+	.blurb .span-4 {
+    font-size: 18px;
+	}
+}
+@media(max-width:700px){
+	.blurb hr {
+    margin-top: -7px;
+	}
+	.blurb .span-2 {
+    line-height: 1.1em;
+	}
+}
+@media(max-width:600px){
+	.blurb {
+    padding: 0em 0.5em 0em 0em;
+	}
+}
+@media(max-width:400px){
+	.blurb .span-1 {
+    font-size: 12px;
+	}
+	.blurb .span-2 {
+    font-size: 16px;
+    line-height: 2em;
+	}
+	.blurb .span-3 {
+    font-size: 10px;
+	}
+	.blurb .span-4 {
+	  font-size: 12px;
+	  line-height: 3em;
+	}
+	.blurb hr {
+		margin-top: -16px;
+	}
+}
+/*---- blurb ----*/
+.slide{
+	display: inline-block;
+	vertical-align: top;
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	font-size: 0;
+}
+.slide-prev,
+.slide-next{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: 0;
+	background-color: transparent;
+	z-index: 4;
+}
+.slide-prev .material-icons,
+.slide-next .material-icons{
+	font-size: 8em;
+	color: white;
+	cursor: pointer;
+}
+.slide-prev{
+	left: 1em;
+}
+.slide-next{
+	right: 1em;
+}
+#slide1{
+	background-image: url("images/island-breeze-banner1.jpg");
+}
+#slide2{
+	background-image: url("images/island-breeze-banner2.jpg");
+}
+#slide3{
+	background-image: url("images/island-breeze-banner3.jpg");
+}
+#slide4{
+	background-image: url("images/island-breeze-banner4.jpg");
+}
+#slide5{
+	background-image: url("images/island-breeze-banner5.jpg");
+}
+@media(max-width:1250px){
+	.slideshow{
+		width: 90%;
+	}
+	.banner section{
+		width: 90%;
+	}
+	.slide-prev{
+		left: 3em;
+	}
+	.slide-next{
+		right: 3em;
+	}
+}
+@media(max-width:800px){
+	.banner{
+		font-size: 14px;
+	}
+	.slide {
+	  height: 440px;
+	}
+	.banner section {
+    height: 440px;
+	}
+	.slide-next {
+    right: -2em;
+	}
+	.slide-prev {
+    left: -2em;
+	}
+}
+@media(max-width:700px){
+	.slide {
+		height: 400px;
+	}
+	.banner section {
+	  height: 400px;
+	}
+}
+@media(max-width:600px){
+	.banner {
+    width: 100%;
+		font-size: 13px;
+	}
+	.slide {
+	  height: 350px;
+	}
+	.slideshow {
+	  width: 100%;
+	}
+	.banner section {
+	  width: 100%;
+		height: 350px;
+	}
+}
+@media(max-width:500px){
+	.banner{
+		font-size: 11px;
+	}
+	.banner section {
+    height: 300px;
+	}
+	.slide {
+    height: 300px;
+	}
+}
+@media(max-width:400px){
+	#reserve-btn {
+    left: 0.5em;
+    bottom: 0.5em;
+	}
+	.banner {
+    font-size: 9px;
+	}
+}
+/*====== welcome section ======*/
+/*====== welcome section ======*/
+.welcome-section{
+	background-image: url("images/tapasWhite.jpg");
+	background-size: 10%;
+	background-position: center;
+	position: relative;
+}
+.welcome-section section{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+  text-align: center;
+  border-left: 3em solid white;
+  border-right: 3em solid white;
+  border-top: 3em solid white;
+	height: 350px;
+	background-image: url("images/island-breeze-img2.png");
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.welcome-section section article{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	padding-top: 2em;
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+.welcome-section article img {
+  width: 100px;
+  margin: 0 auto;
+  opacity: 0.75;
+}
+.welcome-section article span{
+	color: #45752e;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.welcome-section article h1 {
+  color: #45752e;
+  margin: 0 auto;
+  line-height: 0.9em;
+  font-size: 50px;
+  font-family: "kaushan script";
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  text-transform: capitalize;
+}
+.welcome-section article h2{
+	font-size: 24px;
+	text-transform: capitalize;
+	color: #45752e;
+}
+@media(max-width:1250px){
+	.welcome-section section{
+		width: 90%;
+	}
+}
+@media(max-width:1000px){
+	.welcome-section article h1 {
+    font-size: 45px;
+	}
+	.welcome-section section {
+	  height: 300px;
+	  border-left: 1em solid white;
+	  border-right: 1em solid white;
+	  border-top: 1em solid white;
+	}
+	.welcome-section article span {
+    font-size: 25px;
+	}
+	.welcome-section article img {
+    width: 80px;
+	}
+	.welcome-section article h2 {
+    font-size: 20px;
+	}
+}
+@media(max-width:800px){
+	.welcome-section section {
+    height: 250px;
+	}
+	.welcome-section section article {
+		padding-top: 3em;
+	}
+	.welcome-section article span {
+    font-size: 20px;
+	}
+	.welcome-section article h1 {
+    font-size: 40px;
+	}
+	.welcome-section article img {
+    width: 60px;
+	}
+	.welcome-section article h2 {
+    font-size: 16px;
+	}
+}
+@media(max-width:700px){
+	.welcome-section section article {
+    padding-top: 2em;
+	}
+}
+@media(max-width:600px){
+	.welcome-section section {
+		width: 100%;
+	}
+}
+@media(max-width:500px){
+	.welcome-section section {
+    height: 200px;
+    border-left: 1em solid white;
+    border-right: 1em solid white;
+    border-top: 1em solid white;
+	}
+	.welcome-section article img {
+    width: 40px;
+	}
+	.welcome-section article span {
+    font-size: 16px;
+	}
+	.welcome-section article h1 {
+	  font-size: 32px;
+	}
+	.welcome-section article h2 {
+    font-size: 14px;
+	}
+}
+@media(max-width:400px){
+	.welcome-section section {
+    height: 160px;
+	}
+	.welcome-section section article {
+    padding-top: 0;
+	}
+	.welcome-section article img {
+    width: 40px;
+    display: block;
+	}
+	.welcome-section article span {
+    font-size: 14px;
+	}
+	.welcome-section article h1 {
+    font-size: 25px;
+	}
+	.welcome-section article h2 {
+    font-size: 12px;
+    line-height: 1em;
+	}
+}
+/*============*/

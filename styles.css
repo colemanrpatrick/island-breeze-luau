@@ -23,50 +23,6 @@ a{
 b{
 	font-weight: bold !important;
 }
-p.small{
-	font-size: 16px;
-}
-p.medium{
-	font-size: 18px;
-}
-p.large{
-	font-size: 20px;
-}
-@media(max-width:1000px){
-	p.small{
-	  font-size: 15px;
-	}
-}
-@media(max-width:600px){
-	p.small {
-    font-size: 14px;
-	}
-}
-@media(max-width:400px){
-	p.small{
-		font-size: 13px;
-	}
-}
-@media(max-width:350px){
-	p.small{
-		font-size: 12px;
-	}
-}
-li,ul{
-	list-style-type: none !important;
-}
-#accessibilityBtn {
-  position: fixed;
-  right: 2em;
-  top: 2em;
-  border-radius: 3em;
-  line-height: 2em;
-  color: white;
-  background: none;
-  border: 3px solid white;
-  padding: 0.5em;
-  z-index: 999;
-}
 body{
   position: relative;
 	padding: 0;
@@ -88,18 +44,20 @@ body{
 	margin: 0;
 }
 /*======================*/
+
 /*======================*/
 .masthead{
 	position: relative;
 	width: 100%;
 	background-color:#54762a;
-	height: 80px;
+	height: 5em;
+	font-size: 18px;
 }
 .masthead section{
 	width: 1200px;
 	position: relative;
 	margin: 0 auto;
-	height: 80px;
+	height: 5em;
 }
 .phone{
 	position: absolute;
@@ -113,7 +71,7 @@ body{
 }
 .phone ul li a{
 	color: white;
-	font-size: 30px;
+	font-size: 1.75em;
 	transition: 0.3s;
 }
 .phone ul li a:hover{
@@ -121,7 +79,7 @@ body{
 }
 .phone ul li a span{
 	font-family:'Kaushan Script';
-	font-size: 20px;
+	font-size: 0.7em;
 	padding-right: 0.5em;
 	padding-left: 0.5em;
 	text-transform: capitalize;
@@ -184,12 +142,13 @@ body{
 	position: absolute;
 	top: 100%;
 	left: 0;
+	top: 4em;
 	z-index: 999;
 }
 #logo img {
-  width: 320px;
-  margin-left: 20px;
-	transition: 0.3s;
+  width: 18em;
+  margin-left: 1em;
+  transition: 0.3s;
 }
 #logo img:hover{
 	transform: scale(1.1);
@@ -199,7 +158,7 @@ body{
   right: 0;
   top: 100%;
   z-index: 999;
-  width: 300px;
+  width: 18em;
 }
 .main-nav{
 	transform: scaleY(0);
@@ -209,97 +168,94 @@ body{
 .main-nav.active{
 	transform: scaleY(1);
 }
-
 #main-nav a {
   display: block;
   background-color: gold;
   padding: 1em;
-	font-size: 18px;
+	font-size: 1em;
 }
 @media(max-width:800px){
-	#logo img {
-    width: 250px;
-	}
-	.phone ul li a {
-    font-size: 25px;
-	}
-	#reserve-btn {
-    font-size: 28px;
+	.masthead{
+		font-size: 16px;
 	}
 }
 @media(max-width:700px){
-	.phone ul li a {
-    font-size: 20px;
+	.masthead{
+		font-size: 14px;
+	}
+}
+@media(max-width:650px){
+	#main-nav a {
+		background-color: gold;
+		padding: 0.5em;
+		font-size: 1.4em;
+	}
+	.phone {
+		position: relative;
+		left: auto;
+		top: auto;
+		transform: translateY(0%);
+		width: 90%;
+	}
+	.phone ul {
+		width: 100%;
+		display: table;
+	}
+	.phone ul li {
+		display: table-cell;
+		width: 50%;
+		text-align: center;
+		vertical-align: middle;
+		padding-top: 0.5em;
+	}
+	.masthead{
+		font-size: 13px;
 	}
 	.phone ul li a span {
-    font-size: 16px;
-	}
-	#logo img {
-    width: 200px;
+    display: block;
 	}
 }
 @media(max-width:600px){
-	.masthead section {
-    width: 100%;
+	.masthead{
+		font-size: 12px;
 	}
 	#logo img {
-    margin-left: 0px;
+    width: 18em;
+    margin-left: -1em;
 	}
 }
 @media(max-width:500px){
 	.masthead {
-    height: 60px;
+    font-size: 11px;
 	}
-	.masthead section {
-    height: 60px;
+	.masthead section{
+		width: 100%;
 	}
 	#logo img {
-    width: 180px;
-	}
-	.phone {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: translateY(0%);
-    width: 90%;
-	}
-	.phone ul {
-    width: 100%;
-    display: table;
-	}
-	.phone ul li {
-    display: table-cell;
-    width: 50%;
-    text-align: center;
-		vertical-align: middle;
-		padding-top: 0.5em;
-	}
-	.phone ul li a {
-    font-size: 18px;
-    width: 100%;
-	}
-	.phone ul li a span {
-    font-size: 16px;
-		display: block;
-	}
-	.menu-btn {
-    width: 30px;
-    height: 24px;
+    width: 16em;
+    margin-left: 0.25em;
 	}
 }
 @media(max-width:400px){
+	.masthead {
+    font-size: 10px;
+	}
+	.menu-btn {
+    width: 30px;
+    height: 25px;
+	}
+}
+@media(max-width:350px){
 	#logo img {
-		width: 150px;
+    width: 14em;
 	}
-	.phone ul li a span {
-    font-size: 12px;
-	}
-	.phone ul li a {
-    font-size: 15px;
+	.phone {
+    width: 85%;
 	}
 }
 /*======================*/
 .banner{
+	font-size: 18px;
 	width: 100%;
 	background-size: 10%;
 	background-position: center;
@@ -333,7 +289,7 @@ body{
 	position: absolute;
 	left: 1em;
 	bottom: 1em;
-	font-size: 30px;
+	font-size: 2em;
 	padding: 0.5em 1em;
 	background-color: gold;
 	display: inline-block;
@@ -358,25 +314,25 @@ body{
 .blurb hr {
 	border: 0;
 }
-.blurb .span-1{
-	text-transform: capitalize;
-	font-size: 25px;
-	line-height: 2em;
+.blurb .span-1 {
+  text-transform: capitalize;
+  font-size: 0.8em;
+  line-height: 2em;
 }
-.blurb .span-2{
-	text-transform: uppercase;
-	font-size: 40px;
-	font-weight: bold;
-	line-height: 0.75em;
+.blurb .span-2 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1em;
 }
 .blurb .span-3{
-	font-size: 25px;
+	font-size: 1em;
 	text-transform: uppercase;
 }
 .blurb .span-4{
-	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: bold;
+  font-size: 1em;
 }
 .slide{
 	display: inline-block;
@@ -397,7 +353,7 @@ body{
 }
 .slide-prev .material-icons,
 .slide-next .material-icons{
-	font-size: 90px;
+	font-size: 8em;
 	color: white;
 	cursor: pointer;
 }
@@ -437,25 +393,14 @@ body{
 	}
 }
 @media(max-width:800px){
+	.banner{
+		font-size: 14px;
+	}
 	.slide {
 	  height: 440px;
 	}
 	.banner section {
     height: 440px;
-	}
-	.blurb .span-1 {
-    font-size: 18px;
-	}
-	.blurb .span-2 {
-    font-size: 25px;
-		line-height: 0em;
-	}
-	.blurb .span-3 {
-    font-size: 18px;
-		line-height: 1em;
-	}
-	.blurb .span-4 {
-    font-size: 18px;
 	}
 	.slide-next {
     right: -2em;
@@ -471,9 +416,6 @@ body{
 	.banner section {
 	  height: 400px;
 	}
-	#reserve-btn {
-    font-size: 25px;
-	}
 	.blurb hr {
     margin-top: -7px;
 	}
@@ -484,6 +426,7 @@ body{
 	}
 	.banner {
     width: 100%;
+		font-size: 13px;
 	}
 	.slide {
 	  height: 350px;
@@ -495,64 +438,28 @@ body{
 	  width: 100%;
 		height: 350px;
 	}
-	.blurb .span-2 {
-    font-size: 20px;
-    line-height: 0em;
-	}
-	.blurb hr {
-    margin-top: -12px;
-	}
-	.blurb .span-3 {
-    font-size: 14px;
-	}
-	.blurb .span-1 {
-    font-size: 15px;
-	}
-	.blurb .span-4 {
-    font-size: 14px;
-	}
 }
 @media(max-width:500px){
+	.banner{
+		font-size: 11px;
+	}
 	.banner section {
     height: 300px;
 	}
 	.slide {
     height: 300px;
-	}
-	#reserve-btn {
-    font-size: 20px;
-	}
-	.slide-prev .material-icons,
-	.slide-next .material-icons {
-	  font-size: 70px;
 	}
 }
 @media(max-width:400px){
-	.banner section {
-    height: 250px;
-	}
 	#reserve-btn {
-    font-size: 18px;
     left: 0.5em;
     bottom: 0.5em;
 	}
-	.slide {
-    height: 250px;
-	}
-	.blurb .span-1 {
-    font-size: 12px;
+	.banner {
+    font-size: 9px;
 	}
 	.blurb .span-2 {
-    font-size: 16px;
-	}
-	.blurb .span-3 {
-    font-size: 10px;
-	}
-	.blurb .span-4 {
-    font-size: 12px;
-	}
-	.blurb hr {
-		margin-top: -16px;
+    line-height: 1.25em;
 	}
 }
 /*====== welcome section ======*/
@@ -1028,13 +935,14 @@ body{
   padding: 1em;
 }
 .product-detail p {
-  line-height: 2em;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 0.75em;
-	text-transform: capitalize;
-}
+    line-height: 2em;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.75em;
+    text-transform: capitalize;
+    font-size: 16px;
+	}
 .product-detail p b {
   font-weight: bold;
 }
@@ -1062,6 +970,7 @@ body{
   display: inline-block;
   text-transform: capitalize;
   font-family: "kaushan script";
+  margin-top: 0.5em;
 }
 @media(max-width:800px){
 	.product-detail{
@@ -1069,9 +978,6 @@ body{
 	}
 	.product-detail header h3 {
     font-size: 25px;
-	}
-	.product-detail header h3 {
-    font-size: 18px;
 	}
 	.product-detail ul li {
     font-size: 16px;
@@ -1085,17 +991,31 @@ body{
 	}
 }
 @media(max-width:600px){
+	.product-detail p {
+    font-size: 14px;
+	}
 	.product-detail header {
-    padding: 1em 1em;
+    padding: 0.5em 0.5em;
 	}
 	.product-detail header h3 {
 		line-height:1.25em;
+		font-size: 20px;
 	}
 	.product-detail a {
     font-size: 18px;
 	}
 	.product-detail ul li span {
     font-size: 18px;
+	}
+}
+@media(max-width:400px){
+	.product-detail p {
+    font-size: 13px;
+	}
+}
+@media(max-width:340px){
+	.product-detail p {
+    font-size: 12px;
 	}
 }
 /* article-section */
